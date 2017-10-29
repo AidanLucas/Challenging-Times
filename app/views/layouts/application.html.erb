@@ -7,12 +7,8 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
-  <ul>
-    <li><%= link_to 'Home', 'pages' %></li>
-    <li><%= link_to 'About', 'pages/about' %></li>
-  </ul>
   <body>
+    <%= render partial: 'common/header' %>
     <%= yield %>
   </body>
 </html>
